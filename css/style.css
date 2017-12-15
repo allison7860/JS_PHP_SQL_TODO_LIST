@@ -1,0 +1,71 @@
+body {
+    font-family:'Consolas';
+    background:rgb(207, 187, 187);
+}
+
+#wrapper {
+    width:80%;
+    max-width:1024px;
+    margin:0 auto;
+}
+header h2 {
+    text-align: center;
+    color:rgb(161, 91, 91);
+    margin:5px 0;
+}
+.submission {
+    border:10px solid rgb(161, 91, 91);
+    border-radius:20px;
+    padding:10px;
+    width:320px;
+    margin:0 auto;
+    position: relative;
+    background:rgb(224, 199, 199);
+}
+label, input, textarea {
+    display:block;
+    margin-top:10px;
+    width:100%;
+    background:none;
+    border:none;
+    font-size:10pt;
+}
+input[type=text], input[type=date], textarea {
+     border-bottom:1px solid rgb(161, 91, 91);
+     border-radius:2px;
+    transition:.2s;
+}
+input[type=text]:focus, input[type=date]:focus, textarea:focus {
+     background:rgb(231, 213, 213);
+}
+textarea {
+    height:50px;
+}
+input[type=submit] {
+    cursor:pointer;
+    transition:.2s;
+}
+input[type=submit]:hover {
+    background:rgb(231, 213, 213);
+}
+table {
+    border-collapse: collapse;
+    border: 5px solid #ddd;
+    width:100%;
+    margin:5em 0;
+    text-align: center;
+    background: rgb(226, 226, 226);
+}
+tr, td {
+    border:1px solid #ddd;
+    padding:10px 5px;
+}
+table button {
+    width:100%;
+    background:none;
+    border:none;
+    cursor:pointer;
+}
+tr:nth-child(odd) {
+    background:#eee;
+}
