@@ -1,15 +1,15 @@
 <?php
 require_once "connect_db.php";
-// add escape character
 
 if (($_SERVER['REQUEST_METHOD'] == 'POST') && (isset($_GET['add']))) {
     $data = json_encode($_POST);
     $data = json_decode($data);
 
+
  for ($i=0;$i < count($data);$i++){
-      $name = $data->name;
-      $description = $data->description;
-      $date = $data->date;
+      $name = mysqli_real_escape_string($db, $data->name);
+      $description = mysqli_real_escape_string($db, $data->description);
+      $date = mysqli_real_escape_string($db, $data->date);
 
       $sql = "INSERT INTO todo (name,description,date) VALUES ('". $name . "','" . $description ."','" . $date . "');";
 
