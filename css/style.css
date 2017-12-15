@@ -69,3 +69,17 @@ table button {
 tr:nth-child(odd) {
     background:#eee;
 }
+
+div.popup_error {
+    display:none;
+    position:fixed;
+    top:-1px;
+    right:10px;
+    padding:10px;
+    background:rgb(224, 199, 199);
+     border:1px solid rgb(161, 91, 91);
+     font-size:10pt;
+}
+div.popup_error:after {
+    content: 'Please fill out all fields!';
+}

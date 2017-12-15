@@ -10,6 +10,7 @@
     <title>To Do List</title>
 </head>
 <body>
+    <div class="popup_error"></div>
     <div id="wrapper">
         <header>
             <h2>To Do List</h2>

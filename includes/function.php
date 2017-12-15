@@ -10,10 +10,6 @@ if (($_SERVER['REQUEST_METHOD'] == 'POST') && (isset($_GET['add']))) {
       $name = $data->name;
       $description = $data->description;
       $date = $data->date;
-      
-      // $name = mysqli_real_escape_string($name);
-      // $description = mysqli_real_escape_string($description);
-      // $date = mysqli_real_escape_string($date);
 
       $sql = "INSERT INTO todo (name,description,date) VALUES ('". $name . "','" . $description ."','" . $date . "');";
 
